@@ -7,7 +7,8 @@
 // @include     http://www.neopets.com/pool/
 // @include     http://www.neopets.com/iteminfo.phtml?obj_id=*
 // @include     http://www.neopets.com/pound/abandon.phtml
-// @version     1.1
+// @grant	none
+// @version     1.1.1
 // ==/UserScript==
 
 // Modify PETNAME with the names of the pets you want to protect (properly spelled and capitalized!)
