@@ -7,7 +7,7 @@
 // @include     http://www.neopets.com/pool/
 // @include     http://www.neopets.com/iteminfo.phtml?obj_id=*
 // @include     http://www.neopets.com/pound/abandon.phtml
-// @grant	none
+// @grant       none
 // @version     1.1.1
 // ==/UserScript==
 
