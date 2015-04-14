@@ -7,8 +7,9 @@
 // @include     http://www.neopets.com/pool/
 // @include     http://www.neopets.com/iteminfo.phtml?obj_id=*
 // @include     http://www.neopets.com/pound/abandon.phtml
+// @include     http://www.neopets.com/petpetlab.phtml
 // @grant       none
-// @version     1.1.1
+// @version     1.2
 // ==/UserScript==
 
 // Modify PETNAME with the names of the pets you want to protect (properly spelled and capitalized!)
@@ -61,7 +62,10 @@ if (window.location.pathname.match("lab2")) {
 	hidePet = function(index,petName) {
 		$('input[value="'+petName+'"]').parent().parent().remove();
 	};
-
+} else if (window.location.pathname.match("petpetlab")) {
+	hidePet = function(index,petName) {
+		$('table table td:contains("'+petName+'")').remove();
+	};
 } else if (window.location.pathname.match("quickref")) {
 	$('a[href*="convert_pet"]').parent().remove();
 }
